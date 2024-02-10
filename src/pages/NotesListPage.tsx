@@ -13,7 +13,7 @@ interface Note {
 }
 
 //const HOST = 'http://localhost:8000'
-const HOST = 'https://notesapp-kv81.onrender.com/'
+const HOST = 'https://notesapp-kv81.onrender.com'
 
 
 const NotesListPage = () => {
