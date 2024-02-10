@@ -12,7 +12,9 @@ interface Note {
 	updated: string
 }
 
-const HOST = 'http://localhost:8000'
+//const HOST = 'http://localhost:8000'
+const HOST = 'https://notesapp-kv81.onrender.com/'
+
 
 const NotesListPage = () => {
 	const [notes, setNotes] = useState<Note[]>([])
