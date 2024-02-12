@@ -12,8 +12,8 @@ interface Note {
 	updated: string
 }
 
-//const HOST = 'http://localhost:8000'
-const HOST = 'https://notesapp-kv81.onrender.com'
+const HOST = 'http://localhost:8000'
+//const HOST = 'https://notesapp-kv81.onrender.com'
 
 
 const NotesListPage = () => {
@@ -141,6 +141,10 @@ const NotesListPage = () => {
 					</span>
 				</>
 			)}
+
+			<p className='rounded-md text-slate-100 dark:bg-slate-200 p-2 bg-slate-600 dark:text-slate-800 font-semibold'>
+				Taking to much to load the notes? <span className='not-italic'>😕</span> This app was deployed in Render, which is a free service, that means it's not the best or the fastest. So if you enter and there's no notes, please give it couple minutes, it will be ready for you :)
+			</p>
 
 			{notes.map(note => (
 				<ListItem key={note.id} note={note} />
